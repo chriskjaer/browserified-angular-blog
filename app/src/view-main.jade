@@ -1,0 +1,6 @@
+
+div(ng-controller="MainCtrl as post")
+  header
+    h1 {{post.meta.title}}
+  article(ng-bind-html="post.content | markdown")
+
